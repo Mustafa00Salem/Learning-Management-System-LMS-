@@ -6,6 +6,7 @@ from django.db.models.signals import post_save
 
 
 class User(AbstractUser):
+
     ROLE_CHOICES = (
         ("STUDENT", "Student"),
         ("TEACHER", "Teacher"),

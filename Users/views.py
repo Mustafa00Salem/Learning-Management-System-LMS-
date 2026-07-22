@@ -37,7 +37,7 @@ class Login(APIView):
         
         user = authenticate(username=email, password=password)
         if user is None:
-            return Response({'Error':'Invalid Username Or Password'}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({'Error':'Invalid Email Or Password'}, status=status.HTTP_400_BAD_REQUEST)
         
         refresh = RefreshToken.for_user(user)
         
