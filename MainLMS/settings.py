@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'Users',
     'Courses',
     'Enrollments',
+    'Lesson',
     
     'django_filters',
     'rest_framework_simplejwt',
